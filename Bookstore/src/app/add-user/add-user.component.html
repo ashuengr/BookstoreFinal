@@ -1,0 +1,38 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Customer</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="text" formControlName="customerEmailId" placeholder="customerEmailId" name="customerEmailId" class="form-control" id="customerEmailId">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password"formControlName="customerPassword" placeholder="customerPassword" name="customerPassword" class="form-control" id="customerPassword">
+    </div>
+    <div class="form-group">
+        <label for="Name">Full Name:</label>
+        <input formControlName="customerFullName" placeholder="" name="customerFullName" class="customerFullName" id="customerFullName">
+      </div>
+    <div class="form-group">
+      <label for="mobileno">Mobile Number:</label>
+      <input formControlName="customerMobileNumber" placeholder="customerMobileNumber" name="customerMobileNumber" class="form-control" id="customerMobileNumber">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input formControlName="city" placeholder="city" name="city" class="form-control" id="city">
+    </div>
+    <div class="form-group">
+      <label for="zipCode">zip Code:</label>
+      <input formControlName="zipCode" placeholder="zipCode" name="zipCode" class="form-control" id="zipCode">
+    </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <input formControlName="country" placeholder="country" name="country" class="form-control" id="country">
+    </div>
+    
+
+    <button class="btn btn-success">submit</button>
+  </form>
+</div>
